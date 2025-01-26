@@ -1,0 +1,65 @@
+/* animations.css */
+
+@keyframes glitch {
+    0% { transform: translate(0) }
+    20% { transform: translate(-2px, 2px) }
+    40% { transform: translate(-2px, -2px) }
+    60% { transform: translate(2px, 2px) }
+    80% { transform: translate(2px, -2px) }
+    100% { transform: translate(0) }
+   }
+   
+   @keyframes flicker {
+    0%, 100% { opacity: 1 }
+    50% { opacity: 0.7 }
+   }
+   
+   @keyframes reveal {
+    from { transform: translateY(20px); opacity: 0 }
+    to { transform: translateY(0); opacity: 1 }
+   }
+   
+   @keyframes warning-tape {
+    from { width: 0 }
+    to { width: 100% }
+   }
+   
+   .glitch-text {
+    animation: glitch 0.3s infinite;
+    position: relative;
+   }
+   
+   .flicker {
+    animation: flicker 2s infinite;
+   }
+   
+   .reveal {
+    opacity: 0;
+    animation: reveal 0.8s forwards;
+   }
+   
+   .warning-tape {
+    position: relative;
+    overflow: hidden;
+   }
+   
+   .warning-tape::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--color-warning);
+    animation: warning-tape 1s ease-out forwards;
+   }
+   
+   [data-scroll] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+   }
+   
+   [data-scroll].in-view {
+    opacity: 1;
+    transform: translateY(0);
+   }

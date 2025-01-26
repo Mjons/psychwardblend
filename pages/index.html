@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Psych Ward Blend - The Last Coffee You'll Ever Need</title>
+   <link rel="stylesheet" href="../styles/global.css">
+   <link rel="stylesheet" href="../styles/components.css">
+   <link rel="stylesheet" href="../styles/animations.css">
+</head>
+<body>
+ 
+
+   <main>
+       <section class="hero">
+           <div class="container">
+               <h1 class="reveal">
+                   THE LAST COFFEE<br>
+                   YOU'LL EVER NEED
+               </h1>
+               <p class="hero__tagline reveal" style="animation-delay: 0.2s">
+                   Because Enlightenment Should Come with a Warning Label
+               </p>
+               <button class="btn btn--primary reveal" style="animation-delay: 0.4s">
+                   ENTER THE WARD
+               </button>
+           </div>
+       </section>
+
+       <section class="featured" data-scroll>
+           <div class="container">
+               <div class="warning-tape">
+                   <h2>LATEST PRESCRIPTIONS</h2>
+               </div>
+               <div class="product-grid">
+                   <!-- Product cards will be inserted by JS -->
+               </div>
+           </div>
+       </section>
+
+       <section class="cta" data-scroll>
+           <div class="container">
+               <div class="card">
+                   <h2>JOIN THE EXPERIMENT</h2>
+                   <p>Sign up for monthly prescriptions and exclusive access to Dr. O's latest concoctions.</p>
+                   <form class="form" id="signup">
+                       <div class="form-group">
+                           <input type="email" class="input" placeholder="YOUR EMAIL" required>
+                       </div>
+                       <button type="submit" class="btn btn--warning">ACCEPT THE RISK</button>
+                   </form>
+               </div>
+           </div>
+       </section>
+   </main>
+
+   <div class="modal" id="warning-modal">
+       <div class="modal__content">
+           <h2>⚠️ PATIENT CONSENT FORM</h2>
+           <p>Side effects may include:</p>
+           <ul>
+               <li>Sudden career epiphanies</li>
+               <li>Uncontrollable authenticity</li>
+               <li>Chronic inspiration</li>
+           </ul>
+           <div class="modal__actions">
+               <button class="btn btn--primary" id="accept">ACCEPT</button>
+               <button class="btn" id="decline">DECLINE</button>
+           </div>
+       </div>
+   </div>
+
+   <div class="cart-icon" id="cart">
+       <span class="cart-count">0</span>
+   </div>
+
+   <script src="scripts/glitch.js"></script>
+   <script src="scripts/cart.js"></script>
+   <script src="scripts/animations.js"></script>
+   <script src="../scripts/nav.js"></script>
+   <script src="../scripts/mission.js"></script> 
+   <script src="../scripts/modal.js"></script>
+   <script src="../scripts/principles.js"></script>
+</body>
+</html>

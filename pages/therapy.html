@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Therapy Sessions - Psych Ward Blend</title>
+   <link rel="stylesheet" href="../styles/global.css">
+   <link rel="stylesheet" href="../styles/components.css">
+   <link rel="stylesheet" href="../styles/animations.css">
+</head>
+<body class="therapy-page">
+   <main>
+       <section class="therapy-header">
+           <div class="container">
+               <h1>THERAPY SESSIONS</h1>
+               <p class="session-disclaimer">No actual therapy provided. Just coffee-induced enlightenment.</p>
+           </div>
+       </section>
+
+       <section class="blog-grid">
+           <div class="container">
+               <article class="blog-post featured">
+                   <img src="../assets/images/blog-1.png" alt="Ethics of Brain Optimization">
+                   <div class="post-content">
+                       <span class="post-date">SESSION #420</span>
+                       <h2>The Ethics of Brain Optimization</h2>
+                       <p>When is coffee more than just coffee? A deep dive into cognitive enhancement.</p>
+                       <button class="btn btn--primary">READ MORE</button>
+                   </div>
+               </article>
+
+               <div class="post-grid">
+                   <article class="blog-post">
+                       <img src="../assets/images/blog-2.png" alt="Patient Stories"><br>
+                       <span class="post-date">SESSION #421</span>
+                       <h3>"I Quit My Job to Become a Street Mime"</h3>
+                       <p>Success stories from the ward.</p>
+                   </article>
+
+                   <article class="blog-post restricted">
+                       <div class="restricted-overlay">CLEARANCE REQUIRED</div>
+                       <img src="../assets/images/blog-3.png" alt="Secret Research"><br>
+                       <span class="post-date">SESSION #666</span>
+                       <h3>Classified Research Notes</h3>
+                       <p>[REDACTED]</p>
+                   </article>
+               </div>
+           </div>
+       </section>
+
+       <section class="newsletter">
+           <div class="container">
+               <div class="form-card">
+                   <h2>SUBSCRIBE TO DR. O'S JOURNAL</h2>
+                   <p>Weekly doses of enlightenment straight to your inbox.</p>
+                   <form id="therapy-signup">
+                       <input type="email" placeholder="YOUR EMAIL" required>
+                       <button type="submit" class="btn btn--warning">ACCEPT TREATMENT</button>
+                   </form>
+               </div>
+           </div>
+       </section>
+   </main>
+
+   <script src="scripts/blog.js"></script>
+   <script src="../scripts/nav.js"></script>
+</body>
+</html>

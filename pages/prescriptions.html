@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Prescriptions - Psych Ward Blend</title>
+   <link rel="stylesheet" href="../styles/global.css">
+   <link rel="stylesheet" href="../styles/components.css">
+   <link rel="stylesheet" href="../styles/animations.css">
+</head>
+<body>
+   <!-- Nav remains same as index.html -->
+   
+   <main class="prescriptions">
+       <section class="prescription-header">
+           <div class="container">
+               <div class="prescription-pad">
+                   <div class="rx-header">
+                       <h1>DR. O'S PRESCRIPTIONS</h1>
+                       <span class="rx-number">RX: #666-420</span>
+                   </div>
+                   <div class="rx-warning">
+                       <p>FOR COGNITIVE ENHANCEMENT ONLY</p>
+                       <p>DOSAGE: AS NEEDED</p>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+       <section class="products">
+           <div class="container">
+               <div class="product-grid">
+                   <article class="product-card">
+                       <img src="../assets/images/original-blend.png" alt="Original Blend">
+                       <h3>ORIGINAL BLEND</h3>
+                       <p class="effects">Side Effects: Sudden career epiphanies</p>
+                       <p class="price">$49.99</p>
+                       <button class="btn btn--primary add-to-cart" data-id="original">ADD TO PRESCRIPTION</button>
+                   </article>
+
+                   <article class="product-card">
+                       <img src="../assets/images/double-dose.png" alt="Double Dose">
+                       <h3>DOUBLE DOSE</h3>
+                       <p class="effects">Side Effects: Uncontrollable authenticity</p>
+                       <p class="price">$59.99</p>
+                       <button class="btn btn--primary add-to-cart" data-id="double">ADD TO PRESCRIPTION</button>
+                   </article>
+
+                   <article class="product-card limited">
+                       <div class="limited-badge">LIMITED</div>
+                       <img src="../assets/images/experimental.png" alt="Experimental Batch">
+                       <h3>EXPERIMENTAL BATCH</h3>
+                       <p class="effects">Side Effects: Unknown</p>
+                       <p class="price">$99.99</p>
+                       <button class="btn btn--warning add-to-cart" data-id="experimental">PROCEED WITH CAUTION</button>
+                   </article>
+               </div>
+           </div>
+       </section>
+
+       <section class="subscription">
+           <div class="container">
+               <div class="card">
+                   <h2>MONTHLY TREATMENT PLAN</h2>
+                   <p>Subscribe for regular doses and exclusive access to experimental batches.</p>
+                   <div class="plan-options">
+                       <div class="plan">
+                           <h3>OUTPATIENT</h3>
+                           <p class="price">$45/month</p>
+                           <button class="btn btn--primary">SELECT PLAN</button>
+                       </div>
+                       <div class="plan featured">
+                           <h3>INTENSIVE CARE</h3>
+                           <p class="price">$85/month</p>
+                           <button class="btn btn--warning">SELECT PLAN</button>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+   </main>
+
+   <div class="cart-icon" id="cart">
+       <span class="cart-count">0</span>
+   </div>
+
+   <script src="scripts/cart.js"></script>
+   <script src="scripts/animations.js"></script>
+   <script src="../scripts/nav.js"></script>
+   <script src="../scripts/cart.js"></script>
+</body>
+</html>

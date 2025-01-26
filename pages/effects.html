@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Side Effects (Merch) - Psych Ward Blend</title>
+   <link rel="stylesheet" href="../styles/global.css">
+   <link rel="stylesheet" href="../styles/components.css">
+   <link rel="stylesheet" href="../styles/animations.css">
+</head>
+<body>
+   <!-- Nav same as other pages -->
+
+   <main class="effects">
+       <section class="effects-header">
+           <div class="container">
+               <h1>SIDE EFFECTS</h1>
+               <p class="warning-text">WARNING: May cause severe style elevation</p>
+           </div>
+       </section>
+
+       <section class="merch">
+           <div class="container">
+               <div class="product-grid">
+                   <!-- T-Shirts -->
+                   <article class="merch-card">
+                       <img src="../assets/images/survived-tee.png" alt="I Survived Shirt">
+                       <h3>I SURVIVED DR. O'S LAB</h3>
+                       <p class="price">$35.99</p>
+                       <div class="size-select">
+                           <button class="size" data-size="S">S</button>
+                           <button class="size" data-size="M">M</button>
+                           <button class="size" data-size="L">L</button>
+                           <button class="size" data-size="XL">XL</button>
+                       </div>
+                       <button class="btn btn--primary add-to-cart" data-id="survived-tee">ADD TO CART</button>
+                   </article>
+
+                   <!-- Mugs -->
+                   <article class="merch-card">
+                       <div class="qr-overlay">Scan for enlightenment</div>
+                       <img src="../assets/images/microdose-mug.png" alt="Microdose Mug">
+                       <h3>MICRODOSE ME MUG</h3>
+                       <p class="price">$24.99</p>
+                       <button class="btn btn--primary add-to-cart" data-id="microdose-mug">ADD TO CART</button>
+                   </article>
+
+                   <!-- Limited Edition -->
+                   <article class="merch-card limited">
+                       <div class="limited-badge">RARE SIDE EFFECT</div>
+                       <img src="../assets/images/delusions-hoodie.png" alt="Delusions Hoodie">
+                       <h3>DELUSIONS OF GRANDEUR HOODIE</h3>
+                       <p class="price">$69.99</p>
+                       <div class="size-select">
+                           <button class="size" data-size="S">S</button>
+                           <button class="size" data-size="M">M</button>
+                           <button class="size" data-size="L">L</button>
+                           <button class="size" data-size="XL">XL</button>
+                       </div>
+                       <button class="btn btn--warning add-to-cart" data-id="delusions-hoodie">EMBRACE DELUSION</button>
+                   </article>
+               </div>
+           </div>
+       </section>
+
+       <section class="testimonials">
+           <div class="container">
+               <h2>PATIENT TESTIMONIALS</h2>
+               <div class="testimonial-grid">
+                   <div class="testimonial">
+                       <p>"Wore this to my resignation meeting. 10/10 would quit again."</p>
+                       <span class="patient">- Patient #420</span>
+                   </div>
+                   <div class="testimonial">
+                       <p>"My therapist hates this mug. I ordered three more."</p>
+                       <span class="patient">- Patient #666</span>
+                   </div>
+               </div>
+           </div>
+       </section>
+   </main>
+
+   <!-- Size Guide Modal -->
+   <div class="modal" id="size-modal">
+       <div class="modal__content">
+           <h2>SIZE GUIDE</h2>
+           <table class="size-chart">
+               <!-- Size chart content -->
+           </table>
+       </div>
+   </div>
+
+   <div class="cart-icon" id="cart">
+       <span class="cart-count">0</span>
+   </div>
+
+   <script src="scripts/merch.js"></script>
+   <script src="scripts/cart.js"></script>
+   <script src="../scripts/nav.js"></script>
+   <script src="../scripts/cart.js"></script>
+</body>
+</html>
