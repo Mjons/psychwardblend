@@ -1,91 +1,78 @@
-# Merge Files Script
+Psych Ward Blend - The Last Coffee You'll Ever Need 🧠☕
+A darkly humorous e-commerce site for a fictional premium coffee brand that straddles the line between therapy and rebellion. Built with vanilla JavaScript, CSS, and HTML.
+Features
 
-## Overview
+Interactive Product Catalog: Browse our mind-altering coffee blends
+Shopping Cart System: Persistent cart using localStorage
+Security Clearance System: Access restricted lab areas
+Animated UI Elements: Glitch effects, warnings, and dynamic content
+Responsive Design: Fully mobile-responsive layout
 
-This script automatically scans your project directory for commonly known programming files (e.g., `.py`, `.html`, `.css`, `.js`, `.cpp`, and others) and merges their contents into a single file called `merged_files.txt`. It also ensures that the script itself and its output file are ignored in version control by adding them to `.gitignore`.
+Project Structure
+Copypsychwardblend/
+├── assets/
+│   ├── images/
+│   ├── fonts/
+│   └── icons/
+├── styles/
+│   ├── global.css
+│   ├── components.css
+│   └── animations.css
+├── scripts/
+│   ├── glitch.js
+│   ├── cart.js
+│   └── animations.js
+└── pages/
+    ├── index.html
+    ├── lab.html
+    ├── prescriptions.html
+    ├── effects.html
+    └── therapy.html
+Setup & Installation
 
-### Key Features:
-- Scans the current working directory recursively.
-- Ignores common dependency directories (e.g., `node_modules`, `venv`, `.git`).
-- Handles various file types including Python, HTML, CSS, JavaScript, C++, and more.
-- Merges content into `merged_files.txt` with file headers for easy identification.
-- Automatically updates or creates a `.gitignore` file to exclude `merge_code.py` and `merged_files.txt`.
-- Skips binary or unreadable files gracefully.
+Clone the repository
 
-## How to Run
+bashCopygit clone https://github.com/yourusername/psychwardblend.git
 
-1. Clone or download the script to your project directory.
-2. Open a terminal and navigate to the directory containing the script.
-3. Run the script using Python:
+Navigate to project directory
 
-   ```bash
-   python merge_code.py
-   ```
+bashCopycd psychwardblend
 
-4. The script will:
-   - Scan all subdirectories for supported file types.
-   - Merge their content into a single file named `merged_files.txt` in the current directory.
-   - Skip any ignored directories and files.
+Open with your preferred server
 
-5. Check the output file `merged_files.txt` in the project root for the merged content.
+bashCopy# Example using Python's built-in server
+python -m http.server
 
-## Supported File Types
+Tech Stack
 
-The script automatically detects and processes the following file types:
+HTML5
+CSS3 (Custom properties, Animations, Flexbox)
+Vanilla JavaScript
+LocalStorage for cart management
 
-- Python (`.py`)
-- HTML (`.html`)
-- CSS (`.css`)
-- JavaScript (`.js`)
-- C++ (`.cpp`), C (`.c`)
-- Java (`.java`)
-- Ruby (`.rb`)
-- PHP (`.php`)
-- TypeScript (`.ts`)
-- Go (`.go`)
-- Swift (`.swift`)
-- Kotlin (`.kt`)
-- Rust (`.rs`)
-- Shell scripts (`.sh`, `.bat`)
-- C# (`.cs`)
-- XML (`.xml`)
-- JSON (`.json`)
-- YAML (`.yaml`)
-- TOML (`.toml`)
-- INI (`.ini`)
+Notable Features
 
-## Directory and File Exclusions
+Dark mode by default
+Custom glitch animations
+Persistent shopping cart
+Interactive product cards
+Easter eggs hidden throughout
 
-The script skips the following:
+Contributing
 
-### Ignored Directories:
-- `node_modules`
-- `venv`
-- `.git`
-- `__pycache__`
-- `dist`
-- `build`
+Fork the repository
+Create your feature branch (git checkout -b feature/AmazingFeature)
+Commit your changes (git commit -m 'Add some AmazingFeature')
+Push to the branch (git push origin feature/AmazingFeature)
+Open a Pull Request
 
-### Ignored File Patterns:
-- `.lock`
-- `.pyc`, `.pyo`
-- `.min.js`
-- `.map`
-- `merge_code.py`
-- `merged_files.txt`
+License
+This project is licensed under the MIT License - see the LICENSE.md file for details
+Acknowledgments
 
-## Notes
+Inspired by the intersection of coffee culture and tech
+Built for educational purposes
+All products are fictional
 
-- If no files matching the supported types are found, the script will notify you and terminate without creating the output file.
-- If `.gitignore` exists, the script checks and appends `merge_code.py` and `merged_files.txt` if they are not already listed. If `.gitignore` is missing, the script creates one.
-- Binary or unreadable files are skipped with a warning in the terminal.
-
-## Troubleshooting
-
-- **Skipped Files:** If a file is skipped as unreadable, check its encoding or ensure it’s not a binary file.
-- **No Output:** Verify that the directory contains files of the supported types and is not empty.
-
-## License
-
-This script is free to use and modify for any personal or commercial project.
-
+Warning ⚠️
+Side effects may include sudden career changes, existential clarity, and uncontrollable authenticity. Proceed with caution.
