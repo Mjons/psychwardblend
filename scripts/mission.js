@@ -33,7 +33,7 @@ document.querySelector('.btn.btn--primary').addEventListener('click', () => {
         <div class="intro-text reveal" style="animation-delay: 0.3s">
             <p class="manifesto-text">Step into the world of <strong>Psych Ward Blend</strong>, where bold coffee meets cutting-edge inspiration. This isn't your average cup of joe—it's your gateway to elevated mornings and sharper afternoons. Infused with adaptogenic mushrooms like lion's mane and cordyceps, our blend is designed to fuel your brain and body for the chaos of modern life.</p>
             
-            <p class="manifesto-text">Born from the midn of Dr. O, Psych Ward Blend definitely has some itnerestign effects. Whether you're chasing your next big idea or simply surviving the grind, we've got the brew to keep you on your toes.</p>
+            <p class="manifesto-text">Born from the mind of Dr. O, Psych Ward Blend definitely has some itnerestign effects. Whether you're chasing your next big idea or simply surviving the grind, we've got the brew to keep you on your toes.</p>
             
             <p class="manifesto-text highlight">Take a sip. The line between sanity and genius is thinner than you think. Welcome to the blend.</p>
         </div>
