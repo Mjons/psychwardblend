@@ -21,21 +21,32 @@ document.querySelector('.btn.btn--primary').addEventListener('click', () => {
         document.body.appendChild(navScript);
     }
 
+
+
     // Original mission content
     const content = `
-        <div class="manifesto reveal">
-            <h2>OUR MISSION</h2>
-            <p>At Psych Ward Blend, we're not just selling coffee. We're leading a revolution against mundane mornings and mediocre mindsets.</p>
-            
-            <div class="principles">
-                <h3>WHAT WE STAND FOR:</h3>
-                <div class="principle">Cognitive Enhancement Through Natural Means</div>
-                <div class="principle">Ethical Sourcing: From Blue Mountain to Your Brain</div>
-                <div class="principle">Transparency in our Madness</div>
-            </div>
 
-            <p class="disclaimer">WARNING: Side effects may include sudden career changes, existential clarity, and uncontrollable authenticity.</p>
+    <div class="manifesto reveal">
+        <h2>OUR MISSION</h2>
+        <p>At Psych Ward Blend, we're not just selling coffee. We're leading a revolution against mundane mornings and mediocre mindsets.</p>
+        
+        <div class="intro-text reveal" style="animation-delay: 0.3s">
+            <p class="manifesto-text">Step into the world of <strong>Psych Ward Blend</strong>, where bold coffee meets cutting-edge inspiration. This isn't your average cup of joe—it's your gateway to elevated mornings and sharper afternoons. Infused with adaptogenic mushrooms like lion's mane and cordyceps, our blend is designed to fuel your brain and body for the chaos of modern life.</p>
+            
+            <p class="manifesto-text">Born from the midn of Dr. O, Psych Ward Blend definitely has some itnerestign effects. Whether you're chasing your next big idea or simply surviving the grind, we've got the brew to keep you on your toes.</p>
+            
+            <p class="manifesto-text highlight">Take a sip. The line between sanity and genius is thinner than you think. Welcome to the blend.</p>
         </div>
+        
+        <div class="principles reveal" style="animation-delay: 0.6s">
+            <h3>WHAT WE STAND FOR:</h3>
+            <div class="principle">Cognitive Enhancement Through Natural Means</div>
+            <div class="principle">Ethical Sourcing: From Blue Mountain to Your Brain</div>
+            <div class="principle">Transparency in our Madness</div>
+        </div>
+    </div>
+
+        <p class="disclaimer reveal" style="animation-delay: 0.9s">WARNING: Side effects may include sudden career changes, existential clarity, and uncontrollable authenticity.</p>
     `;
 
     document.querySelector('.hero .container').innerHTML = content;
