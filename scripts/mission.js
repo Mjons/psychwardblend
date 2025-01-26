@@ -1,4 +1,27 @@
 document.querySelector('.btn.btn--primary').addEventListener('click', () => {
+    // Set cookie for navigation
+    const d = new Date();
+    d.setTime(d.getTime() + (30*24*60*60*1000));
+    document.cookie = `entered=true;expires=${d.toUTCString()};path=/`;
+    
+    // Show navigation with animation
+    const nav = document.querySelector('.nav');
+    if (nav) {
+        nav.classList.remove('hidden');
+        nav.classList.add('fade-in');
+        
+        // Add a subtle glow effect
+        setTimeout(() => {
+            nav.classList.add('glow');
+            setTimeout(() => nav.classList.remove('glow'), 1000);
+        }, 500);
+    } else {
+        const navScript = document.createElement('script');
+        navScript.src = '../scripts/nav.js';
+        document.body.appendChild(navScript);
+    }
+
+    // Original mission content
     const content = `
         <div class="manifesto reveal">
             <h2>OUR MISSION</h2>
@@ -79,3 +102,16 @@ function initializePrinciples() {
         });
     });
 }
+
+// Function to check if user has entered before
+function hasUserEntered() {
+    return document.cookie.includes('entered=true');
+}
+
+// Initial check on page load
+document.addEventListener('DOMContentLoaded', () => {
+    const nav = document.querySelector('.nav');
+    if (nav && !hasUserEntered()) {
+        nav.classList.add('hidden');
+    }
+});

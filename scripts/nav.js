@@ -29,6 +29,18 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCartCount();
  });
  
+ const hasEntered = document.cookie.includes('entered=true');
+    
+ if (hasEntered || window.location.pathname.includes('index.html')) {
+     const nav = `
+         <nav class="nav ${hasEntered ? 'fade-in' : 'hidden'}">
+             <!-- ... rest of your nav HTML ... -->
+         </nav>
+     `;
+     document.body.insertAdjacentHTML('afterbegin', nav);
+     updateCartCount();
+ }
+
  function updateCartCount() {
     const cart = JSON.parse(localStorage.getItem('cart') || '[]');
     const cartCount = document.querySelector('.cart-count');
