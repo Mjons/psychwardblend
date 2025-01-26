@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
         <nav class="nav">
             <div class="nav__container container">
                 <div class="nav__logo">
-                    <a href="../pages/index.html">
-                    <img src="../assets/images/logo.png" alt="Dr. O's Logo">
+                    <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Dr. O's Logo">
                     <span class="glitch-text">PSYCH WARD BLEND</span>
                 </div>
                 <ul class="nav__menu">
